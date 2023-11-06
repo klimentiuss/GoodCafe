@@ -6,12 +6,21 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
 struct GoodCafeApp: App {
+    
+    @StateObject var authorizationManager = AuthentificationManager()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
+                .environmentObject(authorizationManager)
         }
+    }
+    
+    init() {
+        FirebaseApp.configure()
     }
 }

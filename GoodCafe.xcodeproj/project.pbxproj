@@ -8,12 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		DC87F1452AF95B4D00B64C76 /* GoodCafeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1442AF95B4D00B64C76 /* GoodCafeApp.swift */; };
-		DC87F1472AF95B4D00B64C76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1462AF95B4D00B64C76 /* ContentView.swift */; };
+		DC87F1472AF95B4D00B64C76 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1462AF95B4D00B64C76 /* RootView.swift */; };
 		DC87F1492AF95B4E00B64C76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC87F1482AF95B4E00B64C76 /* Assets.xcassets */; };
 		DC87F14C2AF95B4E00B64C76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC87F14B2AF95B4E00B64C76 /* Preview Assets.xcassets */; };
 		DC87F1562AF95B4E00B64C76 /* GoodCafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1552AF95B4E00B64C76 /* GoodCafeTests.swift */; };
 		DC87F1602AF95B4E00B64C76 /* GoodCafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F15F2AF95B4E00B64C76 /* GoodCafeUITests.swift */; };
 		DC87F1622AF95B4E00B64C76 /* GoodCafeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1612AF95B4E00B64C76 /* GoodCafeUITestsLaunchTests.swift */; };
+		DC87F16F2AF960C200B64C76 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC87F16E2AF960C200B64C76 /* GoogleService-Info.plist */; };
+		DC87F1722AF9613000B64C76 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DC87F1712AF9613000B64C76 /* FirebaseAuth */; };
+		DC87F1742AF9613000B64C76 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DC87F1732AF9613000B64C76 /* FirebaseFirestore */; };
+		DC87F1762AF9613000B64C76 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DC87F1752AF9613000B64C76 /* FirebaseFirestoreSwift */; };
+		DC87F1782AF9613000B64C76 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = DC87F1772AF9613000B64C76 /* FirebaseStorage */; };
+		DC87F17C2AF9629900B64C76 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F17B2AF9629900B64C76 /* InputView.swift */; };
+		DC87F17E2AF962A800B64C76 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F17D2AF962A800B64C76 /* RowView.swift */; };
+		DC87F1812AF962E600B64C76 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1802AF962E600B64C76 /* RegistrationView.swift */; };
+		DC87F1832AF9630900B64C76 /* AuthentificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1822AF9630900B64C76 /* AuthentificationManager.swift */; };
+		DC87F1862AF9634200B64C76 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1852AF9634200B64C76 /* User.swift */; };
+		DC87F1882AF963F300B64C76 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1872AF963F300B64C76 /* LoginView.swift */; };
+		DC87F18A2AF9646100B64C76 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1892AF9646100B64C76 /* ProfileView.swift */; };
+		DC87F18D2AF9764700B64C76 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F18C2AF9764700B64C76 /* RegistrationViewModel.swift */; };
+		DC87F18F2AF9777500B64C76 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F18E2AF9777500B64C76 /* LoginViewModel.swift */; };
+		DC87F1902AF97A3600B64C76 /* AuthentificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1822AF9630900B64C76 /* AuthentificationManager.swift */; };
+		DC87F1932AF97B7D00B64C76 /* AuthentificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1912AF97B7D00B64C76 /* AuthentificationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +52,7 @@
 /* Begin PBXFileReference section */
 		DC87F1412AF95B4D00B64C76 /* GoodCafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodCafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC87F1442AF95B4D00B64C76 /* GoodCafeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodCafeApp.swift; sourceTree = "<group>"; };
-		DC87F1462AF95B4D00B64C76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DC87F1462AF95B4D00B64C76 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		DC87F1482AF95B4E00B64C76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC87F14B2AF95B4E00B64C76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC87F1512AF95B4E00B64C76 /* GoodCafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodCafeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +60,18 @@
 		DC87F15B2AF95B4E00B64C76 /* GoodCafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodCafeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC87F15F2AF95B4E00B64C76 /* GoodCafeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodCafeUITests.swift; sourceTree = "<group>"; };
 		DC87F1612AF95B4E00B64C76 /* GoodCafeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodCafeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC87F16E2AF960C200B64C76 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		DC87F17B2AF9629900B64C76 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		DC87F17D2AF962A800B64C76 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		DC87F1802AF962E600B64C76 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		DC87F1822AF9630900B64C76 /* AuthentificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationManager.swift; sourceTree = "<group>"; };
+		DC87F1852AF9634200B64C76 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DC87F1872AF963F300B64C76 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DC87F1892AF9646100B64C76 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		DC87F18C2AF9764700B64C76 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		DC87F18E2AF9777500B64C76 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DC87F1912AF97B7D00B64C76 /* AuthentificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationTests.swift; sourceTree = "<group>"; };
+		DC87F1942AF97E3600B64C76 /* GoodCafe.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GoodCafe.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +79,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC87F1722AF9613000B64C76 /* FirebaseAuth in Frameworks */,
+				DC87F1782AF9613000B64C76 /* FirebaseStorage in Frameworks */,
+				DC87F1742AF9613000B64C76 /* FirebaseFirestore in Frameworks */,
+				DC87F1762AF9613000B64C76 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +106,7 @@
 		DC87F1382AF95B4D00B64C76 = {
 			isa = PBXGroup;
 			children = (
+				DC87F1942AF97E3600B64C76 /* GoodCafe.xctestplan */,
 				DC87F1432AF95B4D00B64C76 /* GoodCafe */,
 				DC87F1542AF95B4E00B64C76 /* GoodCafeTests */,
 				DC87F15E2AF95B4E00B64C76 /* GoodCafeUITests */,
@@ -95,8 +128,13 @@
 			isa = PBXGroup;
 			children = (
 				DC87F1442AF95B4D00B64C76 /* GoodCafeApp.swift */,
-				DC87F1462AF95B4D00B64C76 /* ContentView.swift */,
+				DC87F18B2AF974CA00B64C76 /* Root */,
+				DC87F1892AF9646100B64C76 /* ProfileView.swift */,
+				DC87F1792AF9619700B64C76 /* Authentification */,
+				DC87F17F2AF962CB00B64C76 /* Service */,
+				DC87F1842AF9633000B64C76 /* Model */,
 				DC87F1482AF95B4E00B64C76 /* Assets.xcassets */,
+				DC87F16E2AF960C200B64C76 /* GoogleService-Info.plist */,
 				DC87F14A2AF95B4E00B64C76 /* Preview Content */,
 			);
 			path = GoodCafe;
@@ -114,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				DC87F1552AF95B4E00B64C76 /* GoodCafeTests.swift */,
+				DC87F1912AF97B7D00B64C76 /* AuthentificationTests.swift */,
 			);
 			path = GoodCafeTests;
 			sourceTree = "<group>";
@@ -125,6 +164,51 @@
 				DC87F1612AF95B4E00B64C76 /* GoodCafeUITestsLaunchTests.swift */,
 			);
 			path = GoodCafeUITests;
+			sourceTree = "<group>";
+		};
+		DC87F1792AF9619700B64C76 /* Authentification */ = {
+			isa = PBXGroup;
+			children = (
+				DC87F1802AF962E600B64C76 /* RegistrationView.swift */,
+				DC87F18C2AF9764700B64C76 /* RegistrationViewModel.swift */,
+				DC87F1872AF963F300B64C76 /* LoginView.swift */,
+				DC87F18E2AF9777500B64C76 /* LoginViewModel.swift */,
+				DC87F17A2AF9623200B64C76 /* Components */,
+			);
+			path = Authentification;
+			sourceTree = "<group>";
+		};
+		DC87F17A2AF9623200B64C76 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DC87F17B2AF9629900B64C76 /* InputView.swift */,
+				DC87F17D2AF962A800B64C76 /* RowView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DC87F17F2AF962CB00B64C76 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DC87F1822AF9630900B64C76 /* AuthentificationManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DC87F1842AF9633000B64C76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC87F1852AF9634200B64C76 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC87F18B2AF974CA00B64C76 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				DC87F1462AF95B4D00B64C76 /* RootView.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +227,12 @@
 			dependencies = (
 			);
 			name = GoodCafe;
+			packageProductDependencies = (
+				DC87F1712AF9613000B64C76 /* FirebaseAuth */,
+				DC87F1732AF9613000B64C76 /* FirebaseFirestore */,
+				DC87F1752AF9613000B64C76 /* FirebaseFirestoreSwift */,
+				DC87F1772AF9613000B64C76 /* FirebaseStorage */,
+			);
 			productName = GoodCafe;
 			productReference = DC87F1412AF95B4D00B64C76 /* GoodCafe.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +305,9 @@
 				Base,
 			);
 			mainGroup = DC87F1382AF95B4D00B64C76;
+			packageReferences = (
+				DC87F1702AF9613000B64C76 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = DC87F1422AF95B4D00B64C76 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +326,7 @@
 			files = (
 				DC87F14C2AF95B4E00B64C76 /* Preview Assets.xcassets in Resources */,
 				DC87F1492AF95B4E00B64C76 /* Assets.xcassets in Resources */,
+				DC87F16F2AF960C200B64C76 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +351,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC87F1472AF95B4D00B64C76 /* ContentView.swift in Sources */,
+				DC87F17C2AF9629900B64C76 /* InputView.swift in Sources */,
+				DC87F1832AF9630900B64C76 /* AuthentificationManager.swift in Sources */,
+				DC87F18F2AF9777500B64C76 /* LoginViewModel.swift in Sources */,
+				DC87F18A2AF9646100B64C76 /* ProfileView.swift in Sources */,
+				DC87F1472AF95B4D00B64C76 /* RootView.swift in Sources */,
 				DC87F1452AF95B4D00B64C76 /* GoodCafeApp.swift in Sources */,
+				DC87F18D2AF9764700B64C76 /* RegistrationViewModel.swift in Sources */,
+				DC87F17E2AF962A800B64C76 /* RowView.swift in Sources */,
+				DC87F1812AF962E600B64C76 /* RegistrationView.swift in Sources */,
+				DC87F1882AF963F300B64C76 /* LoginView.swift in Sources */,
+				DC87F1862AF9634200B64C76 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +369,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC87F1902AF97A3600B64C76 /* AuthentificationManager.swift in Sources */,
+				DC87F1932AF97B7D00B64C76 /* AuthentificationTests.swift in Sources */,
 				DC87F1562AF95B4E00B64C76 /* GoodCafeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,7 +535,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = klimenko.GoodCafe;
+				PRODUCT_BUNDLE_IDENTIFIER = "klimenko.GoodCafe-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -459,7 +564,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = klimenko.GoodCafe;
+				PRODUCT_BUNDLE_IDENTIFIER = "klimenko.GoodCafe-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -583,6 +688,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC87F1702AF9613000B64C76 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC87F1712AF9613000B64C76 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC87F1702AF9613000B64C76 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		DC87F1732AF9613000B64C76 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC87F1702AF9613000B64C76 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		DC87F1752AF9613000B64C76 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC87F1702AF9613000B64C76 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		DC87F1772AF9613000B64C76 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC87F1702AF9613000B64C76 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC87F1392AF95B4D00B64C76 /* Project object */;
 }

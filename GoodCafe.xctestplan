@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "A1B027EC-6700-467A-970E-A442E4EC55FE",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:GoodCafe.xcodeproj",
+      "identifier" : "DC87F1402AF95B4D00B64C76",
+      "name" : "GoodCafe"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:GoodCafe.xcodeproj",
+        "identifier" : "DC87F1502AF95B4E00B64C76",
+        "name" : "GoodCafeTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:GoodCafe.xcodeproj",
+        "identifier" : "DC87F15A2AF95B4E00B64C76",
+        "name" : "GoodCafeUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
