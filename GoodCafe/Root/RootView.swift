@@ -16,7 +16,7 @@ struct RootView: View {
     var body: some View {
         Group {
             if authManager.userSession != nil {
-                ProfileView()
+                TabBarView()
             } else {
                 LoginView()
             }

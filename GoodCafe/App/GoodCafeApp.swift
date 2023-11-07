@@ -17,6 +17,7 @@ struct GoodCafeApp: App {
         WindowGroup {
             RootView()
                 .environmentObject(authorizationManager)
+                .preferredColorScheme(.light)
         }
     }
     
