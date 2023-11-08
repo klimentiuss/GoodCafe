@@ -22,10 +22,8 @@ class FavoriteProductsViewModel: ObservableObject {
             let desserts = try await NetworkManager.shared.getProducts(from: APIConstants.dessertsStringURL)
             
             list = beverages + desserts
-          //  print(list.count)
             
             faforiteProducts = list.filter { product in
-                // Проверить, содержится ли название продукта в массиве namesToKeep
                 return faforiteProductNames.contains(product.name)
             }
             

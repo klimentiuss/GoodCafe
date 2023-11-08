@@ -10,12 +10,12 @@ import SwiftUI
 struct RegistrationView: View {
     
     @Environment(\.dismiss) var dismiss
-    @EnvironmentObject var authManager: AuthentificationManager
+    @EnvironmentObject var authManager: FireBaseManager
     @StateObject private var viewModel = RegistrationViewModel()
 
     var body: some View {
         VStack {
-            Image("fireBaseLogo")
+            Image(systemName: "cup.and.saucer")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 100, height: 120)
@@ -66,7 +66,7 @@ struct RegistrationView: View {
                 .foregroundColor(.white)
                 .frame(width: UIScreen.main.bounds.width - 32, height: 48)
             }
-            .background(Color(.systemBlue))
+            .background(Color.pink)
             .disabled(!isFormValid)
             .opacity(isFormValid ? 1 : 0.5 )
             .cornerRadius(10)
@@ -83,13 +83,14 @@ struct RegistrationView: View {
                         .fontWeight(.bold)
                 }
                 .font(.system(size: 14))
+                .padding(.bottom, 10)
             }
 
         }
     }
 }
 
-extension RegistrationView: AuthViewModelProtocol {
+extension RegistrationView: FireBaseManagerProtocol {
     var isFormValid: Bool {
         return !viewModel.email.isEmpty
         && viewModel.email.contains("@")

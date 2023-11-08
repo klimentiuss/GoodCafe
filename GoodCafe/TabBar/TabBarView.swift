@@ -16,35 +16,48 @@ struct TabBarView: View {
     }
     
     @State private var tabSelected: Tab = .house
+    @State private var showSecondView = false
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                Rectangle()
-                    .foregroundColor(.pink)
-                    .opacity(0.5)
-                    .ignoresSafeArea()
-                
-                
-                switch tabSelected {
-                case .house:
-                    HomeView()
-                case .list:
-                    CategorySelectionView()
-                case .favorite:
-                    FavoriteProductsView()
-                case .profile:
-                    ProfileView()
-                case .cart:
-                    Text("123")
+        if !showSecondView {
+            ProgressView()
+                .onAppear {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        withAnimation {
+                            showSecondView = true
+                        }
+                    }
                 }
-                
-                CustomTabBar(selectedTab: $tabSelected)
-                
+        } else {
+            NavigationView {
+                ZStack {
+                    Rectangle()
+                        .foregroundColor(.pink)
+                        .opacity(0.5)
+                        .ignoresSafeArea()
+                    
+                    
+                    switch tabSelected {
+                    case .house:
+                        HomeView()
+                    case .list:
+                        CategorySelectionView()
+                    case .favorite:
+                        FavoriteProductsView()
+                    case .profile:
+                        ProfileView()
+                    case .cart:
+                        CartView()
+                    }
+                    
+                    CustomTabBar(selectedTab: $tabSelected)
+                    
+                }
             }
         }
-        }
         
+    }
+    
 }
 
 struct TabBarView_Previews: PreviewProvider {

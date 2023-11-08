@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct HomeView: View {
-    
-   
-    
-    
-    @EnvironmentObject var authManager: AuthentificationManager
+        
+    @EnvironmentObject var authManager: FireBaseManager
+    @StateObject private var viewModel = HomeViewModel()
     
     @State private var currentIndex: Int = 0
-    @StateObject private var viewModel = HomeViewModel()
+    @State private var isAlertShown = false
+    
     
     var body: some View {
         
@@ -27,39 +26,30 @@ struct HomeView: View {
                 ZStack {
                     ForEach(0..<viewModel.products.count, id: \.self) { index in
                         ProductLargeRow(product: viewModel.products[index]) {
-                            print("kek")
+                            viewModel.isInfoShown.toggle()
                         }
-                            .overlay {
-                                ZStack {
-                                    
-                                    if viewModel.products[index].price == 12 {
-                                        Sticker()
-                                            .offset(x: -80, y: -100)
-                                    }
-                                    
-                                    Button {
-                                        print(viewModel.products[index].name)
-                                    } label: {
-                                        if currentIndex == index {
-                                            ZStack {
-                                                Circle()
-                                                    .frame(width: 40, height: 40)
-                                                    .foregroundColor(.black)
-                                                Image(systemName: "plus")
-                                                    .foregroundColor(.white)
-                                            }
-                                        }
-                                        
-                                    }
-                                    .padding(.top, screenSize().height - 380)
-                                    .padding(.leading, screenSize().width - 50)
+                        .overlay {
+                            ZStack {
+                                if viewModel.products[index].price == 12 {
+                                    Sticker()
+                                        .offset(x: -80, y: -100)
                                 }
                                 
-                                
+                                CustomButton(currentIndex: currentIndex, productIndex: index, heightIndex: 1.8, widthIndex: 50) {
+                                    CartManager.shared.addProduct(product: viewModel.products[index])
+                                    isAlertShown.toggle()
+                                }
                             }
-                            .scaleEffect( currentIndex == index ? 1 : 0.8)
-                            .offset(x: CGFloat(index - currentIndex) * screenSize().width / 1.25 )
+                            
+                        }
+                        .scaleEffect( currentIndex == index ? 1 : 0.8)
+                        .offset(x: CGFloat(index - currentIndex) * screenSize().width / 1.25 )
                     }
+                    
+                    
+                }
+                .onTapGesture {
+                    viewModel.isInfoShown.toggle()
                 }
                 .gesture(
                     DragGesture()
@@ -79,12 +69,16 @@ struct HomeView: View {
                 )
             }
             .padding(.top, 20)
+            .alert("Product has been added to the cart!", isPresented: $isAlertShown) {
+                Button("Ok", role: .cancel) {}
+            }
             Spacer()
-            
-            
-            
-            
         }
+        .sheet(isPresented: $viewModel.isInfoShown, content: {
+            InfoView(description: viewModel.products[currentIndex].description)
+                .presentationDragIndicator(.visible)
+                .presentationDetents([.fraction(0.25), .medium])
+        })
         .onAppear {
             Task {
                 await viewModel.getProducts()

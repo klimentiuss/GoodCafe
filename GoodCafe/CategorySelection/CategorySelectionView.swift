@@ -8,8 +8,8 @@
 import SwiftUI
 
 enum Category: String, CaseIterable {
-    case beverages = "cup.and.saucer"
-    case desserts = "fork.knife"
+    case beverages
+    case desserts
 }
 
 struct CategorySelectionView: View {
@@ -25,9 +25,10 @@ struct CategorySelectionView: View {
                             .foregroundColor(.white)
                             .foregroundColor(.white)
                             .overlay {
-                                Image(systemName: category.rawValue)
+                                Image(category.rawValue)
                                     .resizable()
-                                    .frame(width: 90, height: 80)
+                                    .clipShape(Circle())
+                                    .padding()
                             }
                             .tint(.black)
                     }

@@ -11,7 +11,7 @@ import FirebaseCore
 @main
 struct GoodCafeApp: App {
     
-    @StateObject var authorizationManager = AuthentificationManager()
+    @StateObject var authorizationManager = FireBaseManager()
     
     var body: some Scene {
         WindowGroup {

@@ -9,22 +9,29 @@ import SwiftUI
 
 struct FavoriteProductsView: View {
     
-    @EnvironmentObject var authManager: AuthentificationManager
+    @EnvironmentObject var authManager: FireBaseManager
     @StateObject private var viewModel = FavoriteProductsViewModel()
+    @State private var isAlertShown = false
     
     var body: some View {
         ScrollView {
             VStack {
                 ForEach(viewModel.faforiteProducts, id: \.self ) { product in
                     ProductRow(product: product) {
-                        Task {
-                            await viewModel.favoriteString = authManager.getFavorites()
-                            await viewModel.getProducts(faforiteProductNames: viewModel.favoriteString)
-                        }
+                        CartManager.shared.addProduct(product: product)
+                        isAlertShown.toggle()
                     }
+                    
                 }
+                
             }
+            .padding(.bottom, 60)
+            .frame(width: screenSize().width)
         }
+        .alert("Product has been added to the cart!", isPresented: $isAlertShown) {
+            Button("Ok", role: .cancel) {}
+        }
+        .scrollIndicators(.hidden)
         .onAppear {
             Task {
                 await viewModel.favoriteString = authManager.getFavorites()

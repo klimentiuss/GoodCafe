@@ -33,17 +33,23 @@
 		DC87F17C2AF9629900B64C76 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F17B2AF9629900B64C76 /* InputView.swift */; };
 		DC87F17E2AF962A800B64C76 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F17D2AF962A800B64C76 /* RowView.swift */; };
 		DC87F1812AF962E600B64C76 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1802AF962E600B64C76 /* RegistrationView.swift */; };
-		DC87F1832AF9630900B64C76 /* AuthentificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1822AF9630900B64C76 /* AuthentificationManager.swift */; };
+		DC87F1832AF9630900B64C76 /* FireBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1822AF9630900B64C76 /* FireBaseManager.swift */; };
 		DC87F1862AF9634200B64C76 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1852AF9634200B64C76 /* User.swift */; };
 		DC87F1882AF963F300B64C76 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1872AF963F300B64C76 /* LoginView.swift */; };
 		DC87F18A2AF9646100B64C76 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1892AF9646100B64C76 /* ProfileView.swift */; };
 		DC87F18D2AF9764700B64C76 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F18C2AF9764700B64C76 /* RegistrationViewModel.swift */; };
 		DC87F18F2AF9777500B64C76 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F18E2AF9777500B64C76 /* LoginViewModel.swift */; };
-		DC87F1902AF97A3600B64C76 /* AuthentificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1822AF9630900B64C76 /* AuthentificationManager.swift */; };
+		DC87F1902AF97A3600B64C76 /* FireBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1822AF9630900B64C76 /* FireBaseManager.swift */; };
 		DC87F1932AF97B7D00B64C76 /* AuthentificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87F1912AF97B7D00B64C76 /* AuthentificationTests.swift */; };
 		DC924ABB2AFA79B2006C6BC1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC924ABA2AFA79B2006C6BC1 /* HomeViewModel.swift */; };
 		DC924ABD2AFA970A006C6BC1 /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC924ABC2AFA970A006C6BC1 /* Sticker.swift */; };
 		DC924AC12AFAA730006C6BC1 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC924AC02AFAA730006C6BC1 /* ProductListViewModel.swift */; };
+		DCDCDD142AFBE88E007CDE95 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDCDD132AFBE88E007CDE95 /* CartManager.swift */; };
+		DCDCDD172AFBEB97007CDE95 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDCDD162AFBEB97007CDE95 /* CartView.swift */; };
+		DCDCDD192AFBEBED007CDE95 /* ProductSmallRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDCDD182AFBEBED007CDE95 /* ProductSmallRow.swift */; };
+		DCDCDD1B2AFBF041007CDE95 /* Navigation + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDCDD1A2AFBF041007CDE95 /* Navigation + Extension.swift */; };
+		DCDCDD1D2AFBFE9E007CDE95 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDCDD1C2AFBFE9E007CDE95 /* InfoView.swift */; };
+		DCDCDD222AFC0DFC007CDE95 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDCDD212AFC0DFC007CDE95 /* CustomButton.swift */; };
 		DCF0C4AA2AFAC221007D54C6 /* FavoriteProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF0C4A92AFAC221007D54C6 /* FavoriteProductsView.swift */; };
 		DCF0C4AC2AFAC40D007D54C6 /* FavoriteProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF0C4AB2AFAC40D007D54C6 /* FavoriteProductsViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -91,7 +97,7 @@
 		DC87F17B2AF9629900B64C76 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		DC87F17D2AF962A800B64C76 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		DC87F1802AF962E600B64C76 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
-		DC87F1822AF9630900B64C76 /* AuthentificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationManager.swift; sourceTree = "<group>"; };
+		DC87F1822AF9630900B64C76 /* FireBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseManager.swift; sourceTree = "<group>"; };
 		DC87F1852AF9634200B64C76 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DC87F1872AF963F300B64C76 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		DC87F1892AF9646100B64C76 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -102,6 +108,12 @@
 		DC924ABA2AFA79B2006C6BC1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		DC924ABC2AFA970A006C6BC1 /* Sticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
 		DC924AC02AFAA730006C6BC1 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		DCDCDD132AFBE88E007CDE95 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		DCDCDD162AFBEB97007CDE95 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		DCDCDD182AFBEBED007CDE95 /* ProductSmallRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSmallRow.swift; sourceTree = "<group>"; };
+		DCDCDD1A2AFBF041007CDE95 /* Navigation + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigation + Extension.swift"; sourceTree = "<group>"; };
+		DCDCDD1C2AFBFE9E007CDE95 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		DCDCDD212AFC0DFC007CDE95 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		DCF0C4A92AFAC221007D54C6 /* FavoriteProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProductsView.swift; sourceTree = "<group>"; };
 		DCF0C4AB2AFAC40D007D54C6 /* FavoriteProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProductsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,8 +169,10 @@
 				DC82E42B2AFA40C9005D03CA /* CustomTabBar.swift */,
 				DC60A7612AFA2CF4000F97E2 /* ProductRow.swift */,
 				DC82E4352AFA578D005D03CA /* ProductLargeRow.swift */,
+				DCDCDD182AFBEBED007CDE95 /* ProductSmallRow.swift */,
 				DC60A7632AFA2EA9000F97E2 /* ImageView.swift */,
 				DC924ABC2AFA970A006C6BC1 /* Sticker.swift */,
+				DCDCDD212AFC0DFC007CDE95 /* CustomButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -176,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				DC82E4262AFA3EA4005D03CA /* View + Extension.swift */,
+				DCDCDD1A2AFBF041007CDE95 /* Navigation + Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -229,22 +244,24 @@
 		DC87F1432AF95B4D00B64C76 /* GoodCafe */ = {
 			isa = PBXGroup;
 			children = (
-				DCF0C4A82AFAC20E007D54C6 /* Favorites */,
-				DC82E4322AFA4AF0005D03CA /* CategorySelection */,
-				DC82E4282AFA3FC3005D03CA /* Home */,
-				DC82E4252AFA3E8B005D03CA /* Extension */,
-				DC82E4222AFA36E5005D03CA /* Product */,
-				DC60A7602AFA2C5E000F97E2 /* Components */,
 				DC60A75F2AFA2C34000F97E2 /* App */,
 				DC87F18B2AF974CA00B64C76 /* Root */,
-				DC60A75A2AFA2688000F97E2 /* Profile */,
 				DC87F1792AF9619700B64C76 /* Authentification */,
+				DC82E4312AFA4A61005D03CA /* TabBar */,
+				DC82E4282AFA3FC3005D03CA /* Home */,
+				DC82E4322AFA4AF0005D03CA /* CategorySelection */,
+				DC82E4222AFA36E5005D03CA /* Product */,
+				DCF0C4A82AFAC20E007D54C6 /* Favorites */,
+				DC60A75A2AFA2688000F97E2 /* Profile */,
+				DCDCDD152AFBEB8B007CDE95 /* Cart */,
+				DCDCDD1E2AFBFF97007CDE95 /* ProductInfo */,
+				DC82E4252AFA3E8B005D03CA /* Extension */,
+				DC60A7602AFA2C5E000F97E2 /* Components */,
 				DC87F17F2AF962CB00B64C76 /* Service */,
 				DC87F1842AF9633000B64C76 /* Model */,
 				DC87F1482AF95B4E00B64C76 /* Assets.xcassets */,
 				DC87F16E2AF960C200B64C76 /* GoogleService-Info.plist */,
 				DC87F14A2AF95B4E00B64C76 /* Preview Content */,
-				DC82E4312AFA4A61005D03CA /* TabBar */,
 			);
 			path = GoodCafe;
 			sourceTree = "<group>";
@@ -299,8 +316,9 @@
 		DC87F17F2AF962CB00B64C76 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				DC87F1822AF9630900B64C76 /* AuthentificationManager.swift */,
+				DC87F1822AF9630900B64C76 /* FireBaseManager.swift */,
 				DC60A75B2AFA26A8000F97E2 /* NetworkManager.swift */,
+				DCDCDD132AFBE88E007CDE95 /* CartManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -320,6 +338,22 @@
 				DC87F1462AF95B4D00B64C76 /* RootView.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		DCDCDD152AFBEB8B007CDE95 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				DCDCDD162AFBEB97007CDE95 /* CartView.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		DCDCDD1E2AFBFF97007CDE95 /* ProductInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DCDCDD1C2AFBFE9E007CDE95 /* InfoView.swift */,
+			);
+			path = ProductInfo;
 			sourceTree = "<group>";
 		};
 		DCF0C4A82AFAC20E007D54C6 /* Favorites */ = {
@@ -476,25 +510,31 @@
 				DC60A75C2AFA26A8000F97E2 /* NetworkManager.swift in Sources */,
 				DCF0C4AC2AFAC40D007D54C6 /* FavoriteProductsViewModel.swift in Sources */,
 				DC87F17C2AF9629900B64C76 /* InputView.swift in Sources */,
-				DC87F1832AF9630900B64C76 /* AuthentificationManager.swift in Sources */,
+				DC87F1832AF9630900B64C76 /* FireBaseManager.swift in Sources */,
 				DC87F18F2AF9777500B64C76 /* LoginViewModel.swift in Sources */,
 				DCF0C4AA2AFAC221007D54C6 /* FavoriteProductsView.swift in Sources */,
 				DC924ABB2AFA79B2006C6BC1 /* HomeViewModel.swift in Sources */,
+				DCDCDD142AFBE88E007CDE95 /* CartManager.swift in Sources */,
+				DCDCDD172AFBEB97007CDE95 /* CartView.swift in Sources */,
 				DC60A7622AFA2CF4000F97E2 /* ProductRow.swift in Sources */,
 				DC82E42C2AFA40C9005D03CA /* CustomTabBar.swift in Sources */,
 				DC87F18A2AF9646100B64C76 /* ProfileView.swift in Sources */,
 				DC82E4362AFA578D005D03CA /* ProductLargeRow.swift in Sources */,
 				DC87F1472AF95B4D00B64C76 /* RootView.swift in Sources */,
+				DCDCDD1D2AFBFE9E007CDE95 /* InfoView.swift in Sources */,
 				DC87F1452AF95B4D00B64C76 /* GoodCafeApp.swift in Sources */,
 				DC82E42A2AFA3FDA005D03CA /* HomeView.swift in Sources */,
+				DCDCDD192AFBEBED007CDE95 /* ProductSmallRow.swift in Sources */,
 				DC924ABD2AFA970A006C6BC1 /* Sticker.swift in Sources */,
 				DC82E4242AFA370C005D03CA /* ProductListView.swift in Sources */,
 				DC82E4342AFA4B0A005D03CA /* CategorySelectionView.swift in Sources */,
+				DCDCDD1B2AFBF041007CDE95 /* Navigation + Extension.swift in Sources */,
 				DC87F18D2AF9764700B64C76 /* RegistrationViewModel.swift in Sources */,
 				DC87F17E2AF962A800B64C76 /* RowView.swift in Sources */,
 				DC82E42E2AFA4469005D03CA /* TabBarView.swift in Sources */,
 				DC60A75E2AFA2843000F97E2 /* Product.swift in Sources */,
 				DC87F1812AF962E600B64C76 /* RegistrationView.swift in Sources */,
+				DCDCDD222AFC0DFC007CDE95 /* CustomButton.swift in Sources */,
 				DC82E4272AFA3EA4005D03CA /* View + Extension.swift in Sources */,
 				DC87F1882AF963F300B64C76 /* LoginView.swift in Sources */,
 				DC87F1862AF9634200B64C76 /* User.swift in Sources */,
@@ -505,7 +545,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC87F1902AF97A3600B64C76 /* AuthentificationManager.swift in Sources */,
+				DC87F1902AF97A3600B64C76 /* FireBaseManager.swift in Sources */,
 				DC87F1932AF97B7D00B64C76 /* AuthentificationTests.swift in Sources */,
 				DC87F1562AF95B4E00B64C76 /* GoodCafeTests.swift in Sources */,
 			);

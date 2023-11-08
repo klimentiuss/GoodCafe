@@ -10,13 +10,13 @@ import SwiftUI
 struct LoginView: View {
     
     
-    @EnvironmentObject var authManager: AuthentificationManager
+    @EnvironmentObject var authManager: FireBaseManager
     @StateObject private var viewModel = LoginViewModel()
 
     var body: some View {
         NavigationStack {
             VStack {
-                Image(systemName: "globe")
+                Image(systemName: "cup.and.saucer")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 100, height: 120)
@@ -54,7 +54,7 @@ struct LoginView: View {
                     .foregroundColor(.white)
                     .frame(width: UIScreen.main.bounds.width - 32, height: 48)
                 }
-                .background(Color(.systemBlue))
+                .background(Color.pink)
                 .disabled(!isFormValid)
                 .opacity(isFormValid ? 1 : 0.5 )
                 .cornerRadius(10)
@@ -72,6 +72,7 @@ struct LoginView: View {
                             .fontWeight(.bold)
                     }
                     .font(.system(size: 14))
+                    .padding(.bottom, 10)
                 }
 
             }
@@ -79,7 +80,7 @@ struct LoginView: View {
     }
 }
 
-extension LoginView: AuthViewModelProtocol {
+extension LoginView: FireBaseManagerProtocol {
     var isFormValid: Bool {
         return !viewModel.email.isEmpty
         && viewModel.email.contains("@")

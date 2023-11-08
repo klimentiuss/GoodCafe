@@ -11,7 +11,7 @@ import SwiftUI
 
 struct RootView: View {
     
-    @EnvironmentObject var authManager: AuthentificationManager
+    @EnvironmentObject var authManager: FireBaseManager
 
     var body: some View {
         Group {

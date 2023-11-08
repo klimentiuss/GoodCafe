@@ -12,7 +12,7 @@ struct ProductLargeRow: View {
     let product: Product
     var completion: () -> ()
     
-    @EnvironmentObject var authManager: AuthentificationManager
+    @EnvironmentObject var authManager: FireBaseManager
     @State private var isFavorite: Bool = false
     
     var body: some View {
@@ -32,12 +32,12 @@ struct ProductLargeRow: View {
                             Spacer()
                             HStack {
                                 Text(product.name)
-                                    .font(.system(size: 25))
+                                    .font(.system(size: screenSize().width <= 375 ? 18 : 20))
                                     .bold()
                                     .opacity(0.8)
                                 
                                 Button {
-                                    
+                                    completion()
                                 } label: {
                                     Image(systemName: "info.circle")
                                 }

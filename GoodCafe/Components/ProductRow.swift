@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProductRow: View {
     
-    @EnvironmentObject var authManager: AuthentificationManager
+    @EnvironmentObject var authManager: FireBaseManager
     @State private var isFavorite: Bool = false
     let product: Product
     var completion: ()->()
@@ -65,7 +65,7 @@ struct ProductRow: View {
                         }
                         .overlay {
                             Button {
-                                
+                                completion()
                             } label: {
                                 ZStack {
                                     Circle()

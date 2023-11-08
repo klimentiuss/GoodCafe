@@ -10,12 +10,12 @@ import Firebase
 import FirebaseFirestoreSwift
 
 
-protocol AuthViewModelProtocol {
+protocol FireBaseManagerProtocol {
     var isFormValid: Bool { get }
 }
 
 @MainActor
-class AuthentificationManager: ObservableObject {
+class FireBaseManager: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
     @Published var currentuser: User?
     

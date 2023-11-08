@@ -11,7 +11,7 @@ import Foundation
 class HomeViewModel: ObservableObject {
     
     @Published var products: [Product] = []
-    
+    @Published var isInfoShown = false
     
     func getProducts() async {
         do {

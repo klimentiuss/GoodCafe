@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    @EnvironmentObject var authManager: AuthentificationManager
+    @EnvironmentObject var authManager: FireBaseManager
 
     var body: some View {
         if let user = authManager.currentuser {
@@ -55,14 +55,9 @@ struct ProfileView: View {
                     } label: {
                         RowView(imageName: "arrow.left.circle.fill", title: "Sign out", tintColor: .red)
                     }
-
-                    Button {
-                        
-                    } label: {
-                        RowView(imageName: "xmark.circle.fill", title: "Delete account", tintColor: .red)
-                    }
                 }
             }
+            .scrollContentBackground(.hidden)
             .navigationTitle("Profile")
         }
         
